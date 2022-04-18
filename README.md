@@ -1,7 +1,27 @@
-# pkuthss: LaTeX template for dissertations in Peking University
+# pkuthss: LaTeX template for dissertations in SECE of PKU
 
-Source: [CasperVector/pkuthss](https://github.com/CasperVector/pkuthss)
+基于北大硕士论文模板: [Thesharing/pkuthss](https://github.com/Thesharing/pkuthss)
 
+相较于模版，本项目改动了以下内容：
+
+1. 引入图和表格的双语标题。使用示例：`\bicaption{填入中文标题}{fill in English caption}`，如仅需中文标题，可以使用：`\caption{填入中文标题}`。
+
+2. 引入章节缩写表（chap/terms.tex），引入章节科研成果（chap/achieve.tex）。
+
+3. 参考文献格式的人名采用`gbnamefmt=quanpin`。
+
+4. 按照北大论文要求，摘要及之后的章节去除了空白页。见thesis.tex中	`\let\cleardoublepage\relax`。因此chap/abs.tex中的中文和英文摘要之间多插入一个`\clearpage
+`。
+
+5. 引入自动生成的图目录和表目录。见thesis.tex中`\listoffigures`和`\listoftables`
+
+6. pkuthss.cls中引入`\hiddenchap`命令，使得该章节不在目录中显示。目前仅用于“缩写表”这一章节。
+
+注意：如提示FangSong字体未找到，可以将pkuthss.cls文件中的`\thss@int@boolopt{pkufont}{true}`的`true`改为`false`。其他部分请看下文的原README内容。
+
+以下是[Thesharing/pkuthss](https://github.com/Thesharing/pkuthss)
+的原README内容：
+---
 ## Changes
 
 相比于原模板有以下改动：

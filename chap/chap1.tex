@@ -2,12 +2,52 @@
 % Public domain.
 
 \chapter{引言}
-\pkuthssffaq % 中文测试文字。
 
 This is an example sentence.
+
+\section{引用}
+这篇工作\cite{vaswani2017attention}不过如此。
+\footnote{此处引用的数字没有出错，因为第一个引用在摘要。}
+
+\section{图表}
+
+\subsection{表}
+
+\begin{table}[htbp]
+    \centering
+    \bicaption{测试表格}{Test table}
+    \label{tab:example}
+    \begin{tabular}{ll}
+    \toprule
+    \textbf{写} & \textbf{几句} \\
+    \midrule
+
+    表格 & 就  \\
+    
+    长  & 这样 \\
+    
+    \bottomrule
+
+    \end{tabular}
+\end{table}
+
+\subsection{图}
+
+\begin{figure}[htb]
+    \centering
+        \includegraphics[width=0.4\textwidth]{image/example.jpeg}
+
+    % \caption{ParAhLSTMat的解码器架构}
+    \bicaption{图片示例}{Example of graphics}
+    \label{fig:2-par_arch}
+\end{figure}
+
+\subsection{公式}
 
 \begin{equation}
     E = mc^{2}
 \end{equation}
+
+\pkuthssffaq % 中文测试文字。
 
 % vim:ts=4:sw=4
