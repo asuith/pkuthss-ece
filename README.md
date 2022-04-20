@@ -10,8 +10,7 @@
 
 3. 参考文献格式的人名采用`gbnamefmt=quanpin`。
 
-4. 按照北大论文要求，摘要及之后的章节去除了空白页。见thesis.tex中	`\let\cleardoublepage\relax`。因此chap/abs.tex中的中文和英文摘要之间多插入一个`\clearpage
-`。
+4. 按照北大论文要求，摘要及之后的章节去除了空白页。见thesis.tex中`\let\cleardoublepage\relax`。因此chap/abs.tex中的中文和英文摘要之间多插入一个`\clearpage`。同时后续的科研成果和致谢部分手动添加了空白页`\clearpage{\thispagestyle{empty}\cleardoublepage}`
 
 5. 引入自动生成的图目录和表目录。见thesis.tex中`\listoffigures`和`\listoftables`
 
