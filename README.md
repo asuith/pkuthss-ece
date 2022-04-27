@@ -1,8 +1,8 @@
 # pkuthss: LaTeX template for dissertations in SECE of PKU
 
-基于北大硕士论文模板: [Thesharing/pkuthss](https://github.com/Thesharing/pkuthss)
+基于北大硕士论文模板: [Thesharing/pkuthss](https://github.com/Thesharing/pkuthss)。使用指南见下文原README文件的内容。
 
-相较于模版，本项目改动了以下内容：
+结合信工学院的论文要求，本项目改动了以下内容：
 
 1. 引入图和表格的双语标题。使用示例：`\bicaption{填入中文标题}{fill in English caption}`，如仅需中文标题，可以使用：`\caption{填入中文标题}`。
 
@@ -12,15 +12,23 @@
 
 4. 按照北大论文要求，摘要及之后的章节去除了空白页。见thesis.tex中`\let\cleardoublepage\relax`。因此chap/abs.tex中的中文和英文摘要之间多插入一个`\clearpage`。同时后续的科研成果和致谢部分手动添加了空白页`\clearpage{\thispagestyle{empty}\cleardoublepage}`
 
-5. 引入自动生成的图目录和表目录。见thesis.tex中`\listoffigures`和`\listoftables`
+5. 引入自动生成的《图目录》和《表目录》，以及需要自行填写的《缩写表》，对应thesis.tex中`\listoffigures`和`\listoftables`，以及chap/terms.tex。
 
 6. pkuthss.cls中引入`\hiddenchap`命令，使得该章节不在目录中显示。目前仅用于“缩写表”这一章节。
 
-注意：如提示FangSong字体未找到，可以将pkuthss.cls文件中的`\thss@int@boolopt{pkufont}{true}`的`true`改为`false`。其他部分请看下文的原README内容。
+7. thesis.tex中加入`\special{dvipdfmx:config z 0}`，用于取消PDF压缩，加快编译速度。提交终板时可以删除此命令。
 
-以下是[Thesharing/pkuthss](https://github.com/Thesharing/pkuthss)
-的原README内容：
+注意：如提示FangSong字体未找到，可以将pkuthss.cls文件中的`\thss@int@boolopt{pkufont}{true}`的`true`改为`false`。其他部分请参考下文的原README内容。
+
+关于查重等未尽事宜，可以查看本项目的相关issue，或发起新issue。
+
+以下是[Thesharing/pkuthss](https://github.com/Thesharing/pkuthss)的原README内容。
+
 ---
+# pkuthss: LaTeX template for dissertations in Peking University
+
+Source: [CasperVector/pkuthss](https://github.com/CasperVector/pkuthss)
+
 ## Changes
 
 相比于原模板有以下改动：
