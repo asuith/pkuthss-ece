@@ -20,7 +20,7 @@
 
 注意：如提示FangSong字体未找到，可以将pkuthss.cls文件中的`\thss@int@boolopt{pkufont}{true}`的`true`改为`false`。其他部分请参考下文的原README内容。
 
-关于查重等未尽事宜，可以查看本项目的相关issue，或发起新issue。
+关于查重等未尽事宜，可以查看本项目的相关issue，或发起新issue。如需要撰写信工学院的开题报告，可使用同为LaTeX版的开题报告[asuith/pkuszdp](https://github.com/asuith/pkuszdp)。
 
 以下是[Thesharing/pkuthss](https://github.com/Thesharing/pkuthss)的原README内容。
 
