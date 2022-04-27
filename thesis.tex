@@ -33,9 +33,10 @@
 \usepackage{tabularx}
 
 \usepackage[list=off]{bicaption} % 双语caption
-\captionsetup[figure][bi-second]{name=Figure} %设置图的英文编号前缀
-\captionsetup[table][bi-second]{name=Table} %设置表的英文编号前缀
+\captionsetup[figure][bi-second]{name=Figure} % 设置图的英文编号前缀
+\captionsetup[table][bi-second]{name=Table} % 设置表的英文编号前缀
 \usepackage{enumitem} % 科研成果列表
+\special{dvipdfmx:config z 0} % 取消PDF压缩，加快编译速度; 最终版记得取消，不然生成文件会较大，虽然也没什么大不了的。
 
 
 \renewcommand{\listfigurename}{图目录}
