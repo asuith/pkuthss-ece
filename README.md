@@ -14,9 +14,7 @@
 
 5. 引入自动生成的《图目录》和《表目录》，以及需要自行填写的《缩写表》，对应thesis.tex中`\listoffigures`和`\listoftables`，以及chap/terms.tex。
 
-6. pkuthss.cls中引入`\hiddenchap`命令，使得该章节不在目录中显示。目前仅用于“缩写表”这一章节。
-
-7. thesis.tex中加入`\special{dvipdfmx:config z 0}`，用于取消PDF压缩，加快编译速度。提交终板时可以删除此命令。
+6. thesis.tex中加入`\special{dvipdfmx:config z 0}`，用于取消PDF压缩，加快编译速度。提交终板时可以删除此命令。
 
 注意：如提示FangSong字体未找到，可以将pkuthss.cls文件中的`\thss@int@boolopt{pkufont}{true}`的`true`改为`false`。其他部分请参考下文的原README内容。
 
