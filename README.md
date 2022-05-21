@@ -16,6 +16,8 @@
 
 6. thesis.tex中加入`\special{dvipdfmx:config z 0}`，用于取消PDF压缩，加快编译速度。提交终板时可以删除此命令。
 
+7. 封面题目的字体改为一号大小，表格内容的字体改为11pt大小。
+
 注意：如提示FangSong字体未找到，可以将pkuthss.cls文件中的`\thss@int@boolopt{pkufont}{true}`的`true`改为`false`。其他部分请参考下文的原README内容。
 
 关于查重等未尽事宜，可以查看本项目的相关issue，或发起新issue。如需要撰写信工学院的开题报告，可使用同为LaTeX版的开题报告[asuith/pkuszdp](https://github.com/asuith/pkuszdp)。

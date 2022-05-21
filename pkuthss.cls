@@ -370,7 +370,7 @@
 		\vfill
 		% Title of the thesis.
 		{%
-			\zihao{2}{\label@ctitle}\linespread{1.6}\selectfont%
+			\zihao{1}{\label@ctitle}\linespread{1.6}\selectfont%
 			\thss@int@fillinblank{2}{0.64\textwidth}{\textbf{\@ctitle}}%
 		}
 		\vfill
