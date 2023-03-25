@@ -34,8 +34,16 @@
 
 \usepackage[justification=centering]{caption} % caption多行时中心对齐失效，用这个可以解决
 \usepackage[list=off]{bicaption} % 双语caption
+
 \captionsetup[figure][bi-second]{name=Figure} % 设置图的英文编号前缀
 \captionsetup[table][bi-second]{name=Table} % 设置表的英文编号前缀
+
+\captionsetup[table]{position=top,skip=6pt plus 0pt minus 0pt}
+% 上面 captionsetup 设置了表名和表格之前的间距为 6pt，约为要求的6磅。
+\captionsetup[figure]{position=bottom,skip=6pt plus 0pt minus 0pt}
+% 上面 captionsetup 设置了之后效果反而很奇怪，目测间距不对。
+
+
 \usepackage{enumitem} % 科研成果列表
 \usepackage{etoolbox}
 \AtBeginEnvironment{tabular}{\small} % 默认表格内容的字体有点大，改成是11pt

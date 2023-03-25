@@ -13,8 +13,11 @@ This is an example sentence.
 
 \subsection{表}
 
+测试上侧表格文本。测试上侧表格文本。测试上侧表格文本。测试上侧表格文本。测试上侧表格文本。测试上侧表格文本。测试上侧表格文本。
+
 \begin{table}[htbp]
     \centering
+    % \setlength{\belowcaptionskip}{0pt}
     \bicaption{测试表格}{Test table}
     \label{tab:example}
     \begin{tabular}{ll}
@@ -31,16 +34,22 @@ This is an example sentence.
     \end{tabular}
 \end{table}
 
+测试下侧文本。测试下侧文本。测试下侧文本。测试下侧文本。测试下侧文本。测试下侧文本。
+
 \subsection{图}
+
+测试上侧文本。测试上侧文本。测试上侧文本。测试上侧文本。测试上侧文本。
 
 \begin{figure}[htb]
     \centering
-        \includegraphics[width=0.4\textwidth]{image/example.jpeg}
+        \includegraphics[width=0.2\textwidth]{image/example.jpeg}
 
     % \caption{ParAhLSTMat的解码器架构}
     \bicaption{图片示例}{Example of graphics}
     \label{fig:2-par_arch}
 \end{figure}
+
+测试图片下侧文本。测试图片下侧文本。测试图片下侧文本。测试图片下侧文本。
 
 \subsection{公式}
 
